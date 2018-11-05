@@ -1,28 +1,31 @@
 <template>
     <div class="services">
-        <article class="description">
-            Air conditioning (A/C)
-            Brakes, Break Repair
-            Drive Train
-            Engine Overhaul
-            Scheduled Maintenance
-            Tune Ups
-            No Start/ No Run
-            Bearings
-            Clutches
-            Emissions Repair
-            Major Engine Repair
-            Timing Belts and Chains
-            Transmissions
-            Pre Purchase Inspections
-            Alternators
-            Cooling Repair
-            Electrical
-            Front end work
-            Starters
-            Water Pumps
-            Oil Changes
-        </article>
+        <h1 class="">Services offered</h1>
+        <ul>
+
+
+            <li>Brakes - Brake Repair</li>
+            <li>Drive Train</li>
+            <li>Engine Overhaul</li>
+            <li>Scheduled Maintenance</li>
+            <li>Tune Ups</li>
+            <li>No Start - No Run issues</li>
+            <li>Bearings</li>
+            <li>Clutches</li>
+            <li>Emissions Repair</li>
+            <li>Major Engine Repair</li>
+            <li>Timing Belts and Chains</li>
+            <li>Transmissions</li>
+            <li>Pre Purchase Inspections</li>
+            <li>Alternators</li>
+            <li>Cooling Repair</li>
+            <li>Electrical</li>
+            <li>Starters</li>
+            <li>Water Pumps</li>
+            <li>Oil Changes</li>
+        </ul>
+
+
 
     </div>
 </template>
@@ -42,12 +45,19 @@
 
 
 <style scoped>
-    .description {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        color: rgb(0, 0, 0);
-        font-size: 2rem;
-        text-align: center;
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 70%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        background-color: rgba(52, 124, 118, 0.561);
+        border-radius: 7px;
     }
+
+    ul>li {}
 </style>
