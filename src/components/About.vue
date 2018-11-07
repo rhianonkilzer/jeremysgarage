@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="about col-12 text-center">
         <article>
             Jeremy's Garage is a full service auto repair facility in Nampa serving the Treasure Valley area.
 
