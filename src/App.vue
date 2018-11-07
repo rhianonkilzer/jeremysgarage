@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <div class="banner-div" style="width: 200px; position: relative;">
+      <img id="image1" style="position: relative;" src="./assets/banner.png" alt="banner" />
+      <img id="image2" style="position: absolute; top: 50px; left: 50px;" src="./assets/Jeremy's Garagewhite.png" alt="title" />
+    </div>
+    <!-- <img alt="Banner" src="./assets/banner.png">
+    <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
+
     <div id="nav"> |
       <router-link to="/">Home</router-link> |
       <router-link to="/services">Services</router-link> |
@@ -32,6 +39,12 @@
   }
 
   #nav a.router-link-exact-active {
-    color: #125d57;
+    color: #47aeb8;
+  }
+
+
+  .title {
+    height: auto;
+    width: 70vh;
   }
 </style>

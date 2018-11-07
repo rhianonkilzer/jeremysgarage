@@ -46,18 +46,15 @@
 
 <style scoped>
     .services {
+        font-family: 'Roboto', sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        width: 70%;
+        width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
-
         background-color: rgba(52, 124, 118, 0.561);
         border-radius: 7px;
     }
-
-    ul>li {}
 </style>
