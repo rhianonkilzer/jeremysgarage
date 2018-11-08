@@ -1,7 +1,7 @@
 <template>
     <div class="videos col-12 d-flex justify-content-center">
 
-        <iframe width="900" height="605" src="https://www.youtube.com/embed/BG?playlist=3k4E2Xp7F7M,04XP2VCru8E,inFX5Sd-FpA,3F8EySrPxNg,rXszrJ6kw9E,LUb-DSuQgJo,HT0buhZckcY,dEofomZ7J3I,7FGsFPP99yU,mwDZJ1hD1IM"
+        <iframe class="mt-4" width="900" height="605" src="https://www.youtube.com/embed/BG?playlist=3k4E2Xp7F7M,04XP2VCru8E,inFX5Sd-FpA,3F8EySrPxNg,rXszrJ6kw9E,LUb-DSuQgJo,HT0buhZckcY,dEofomZ7J3I,7FGsFPP99yU,mwDZJ1hD1IM"
             frameborder="0" allowfullscreen>
 
             <!-- 
@@ -52,7 +52,5 @@
 
 
 <style scoped>
-    /* iframe {
-        left: 5px;
-    } */
+    iframe {}
 </style>

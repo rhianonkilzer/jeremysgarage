@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="banner-div" style="width: 200px; position: relative;">
-      <img id="image1" style="position: relative;" src="./assets/banner.png" alt="banner" />
-      <img id="image2" style="position: absolute; top: 50px; left: 50px;" src="./assets/Jeremy's Garage1.png" alt="title" />
+      <img id="banner-img" style="position: relative;" src="./assets/banner.png" alt="banner" />
+      <img id="title-img" style="position: absolute; top: 50px; left: 50px;" src="./assets/Jeremy's Garage1.png" alt="title" />
     </div>
     <!-- <img alt="Banner" src="./assets/banner.png">
     <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
@@ -69,7 +69,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .navbar a:hover {
@@ -85,12 +85,16 @@
     /* Used in this example to enable scrolling */
   }
 
-  .navbar a:active {
+  /* .navbar a:active {
     color: #47aeb8;
+  }  */
+
+  #banner-img {
+    box-shadow: 0 4px 8px 0 rgba(10, 105, 134, 0.2);
+
   }
 
-  .title {
+  #title-img {
     height: auto;
-    width: 70vh;
   }
 </style>
