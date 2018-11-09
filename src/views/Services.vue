@@ -1,7 +1,7 @@
 <template>
   <div class="services">
-    <h1>Services offered</h1>
-    <ul>
+    <h1 class="title">Services offered</h1>
+    <ul class="services-list">
       <li>Brakes - Brake Repair</li>
       <li>Drive Train</li>
       <li>Engine Overhaul</li>
@@ -33,13 +33,33 @@
 
 <style scoped>
   .services {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .services > .title {
+    margin-bottom: 2rem;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    grid-column-gap: 1rem;
+    justify-content: center;
+
+    width: 55rem;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
   }
 </style>
