@@ -7,13 +7,13 @@
     <!-- <img alt="Banner" src="./assets/banner.png">
     <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
 
-    <div class="navbar">
+    <nav class="navbar">
       <a href="#/home">Home</a>
       <a href="#/services">Services</a>
       <a href="#/about">About</a>
       <a href="#/videos">Videos</a>
       <a href="#/contact">Contact</a>
-    </div>
+    </nav>
 
     <!-- <div id="nav"> |
       <router-link to="/">Home</router-link> |
