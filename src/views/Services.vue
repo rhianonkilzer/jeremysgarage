@@ -62,4 +62,49 @@
 
     list-style: none;
   }
+
+  .services-list > li {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+
+    /* Space for the checkmark */
+    padding-left: 1.65rem;
+
+    white-space: nowrap;
+  }
+
+  /* Checkmark styling below ↓ */
+  .services-list > li::before,
+  .services-list > li::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  /* The circle */
+  .services-list > li::before {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    background-color: rgba(50, 150, 255);
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  /* The checkmark */
+  .services-list > li::after {
+    width: 0.65rem;
+    height: 0.35rem;
+
+    border-left: solid 1px white;
+    border-bottom: solid 1px white;
+
+    transform: translate(0.3rem, calc(-50% - 0.05rem)) rotate(-45deg);
+  }
 </style>
