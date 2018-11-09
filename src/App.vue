@@ -1,12 +1,5 @@
 <template>
   <div id="app">
-    <div class="banner-div" style="width: 200px; position: relative;">
-      <img id="banner-img" style="position: relative;" src="./assets/banner.png" alt="banner" />
-      <img id="title-img" style="position: absolute; top: 50px; left: 50px;" src="./assets/Jeremy's Garage1.png" alt="title" />
-    </div>
-    <!-- <img alt="Banner" src="./assets/banner.png">
-    <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
-
     <nav id="nav">
       <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link>
       <router-link to="/">Home</router-link>
@@ -37,6 +30,10 @@
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+  }
+
+  #app > *:last-child {
+    padding-top: 3rem;
   }
 
   #nav {
@@ -103,24 +100,5 @@
 
   #nav > a.router-link-exact-active::after {
     width: 100%;
-  }
-
-  .main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px;
-    /* Used in this example to enable scrolling */
-  }
-
-  /* .navbar a:active {
-    color: #47aeb8;
-  }  */
-
-  #banner-img {
-    box-shadow: 0 4px 8px 0 rgba(10, 105, 134, 0.2);
-  }
-
-  #title-img {
-    height: auto;
   }
 </style>
