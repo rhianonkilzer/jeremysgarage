@@ -7,7 +7,6 @@
     <!-- <img alt="Banner" src="./assets/banner.png">
     <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
 
-
     <div class="navbar">
       <a href="#/home">Home</a>
       <a href="#/services">Services</a>
@@ -91,7 +90,6 @@
 
   #banner-img {
     box-shadow: 0 4px 8px 0 rgba(10, 105, 134, 0.2);
-
   }
 
   #title-img {
