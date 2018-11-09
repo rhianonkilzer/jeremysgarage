@@ -8,7 +8,7 @@
     <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
 
     <nav class="navbar">
-      <a href="#/home">Home</a>
+      <a href="#/">Home</a>
       <a href="#/services">Services</a>
       <a href="#/about">About</a>
       <a href="#/videos">Videos</a>
