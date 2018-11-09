@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <!-- <div class="banner-div" style="width: 200px; position: relative;">
+    <div class="banner-div" style="width: 200px; position: relative;">
       <img id="banner-img" style="position: relative;" src="./assets/banner.png" alt="banner" />
       <img id="title-img" style="position: absolute; top: 50px; left: 50px;" src="./assets/Jeremy's Garage1.png" alt="title" />
-    </div> -->
+    </div>
     <!-- <img alt="Banner" src="./assets/banner.png">
     <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
 
