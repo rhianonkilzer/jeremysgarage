@@ -8,11 +8,11 @@
     <img class="title" alt="jeremysgarage" src="./assets/Jeremy's Garage.png"> -->
 
     <nav class="navbar">
-      <a href="#/">Home</a>
-      <a href="#/services">Services</a>
-      <a href="#/about">About</a>
-      <a href="#/videos">Videos</a>
-      <a href="#/contact">Contact</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/services">Services</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/videos">Videos</router-link>
+      <router-link to="/contact">Contact</router-link>
     </nav>
 
     <!-- <div id="nav"> |
