@@ -6,7 +6,7 @@
 
     <!-- Fake Content below -->
     <section>
-      <h1>Section</h1>
+      <h1>Lorem Ipsum Dolor</h1>
       <article>
         <div></div>
         <h2>Lorem</h2>
