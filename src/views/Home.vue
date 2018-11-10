@@ -94,8 +94,8 @@
     width: 100%;
     margin-bottom: 2rem;
 
-    font-family: Montserrat, sans-serif;
     font-weight: bold;
+    letter-spacing: 2px;
     text-align: center;
   }
 
@@ -119,12 +119,10 @@
   }
 
   article > h2 {
-    font-family: Roboto, sans-serif;
   }
 
   article > p {
     /* text-align: justify; */
-    font-family: Roboto, 'san-serif';
     color: #444;
   }
 </style>

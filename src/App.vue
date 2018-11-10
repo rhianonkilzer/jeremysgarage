@@ -30,8 +30,16 @@ export default {
 </script>
 
 <style>
+  /* Define the "system" font family */
+  @font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  }
+
   #app {
-    font-family: 'Montserrat', sans-serif;
+    font-family: system;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #000000;
@@ -81,8 +89,6 @@ export default {
     padding: 0 0.4rem;
     color: inherit;
 
-    font-size: 1rem;
-    font-family: Roboto;
     text-decoration: none;
 
     border-radius: 2px;
