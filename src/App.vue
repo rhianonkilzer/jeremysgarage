@@ -65,7 +65,7 @@ export default {
     width: 100%;
     color: white;
 
-    transition: background-color 0.2s;
+    transition: background-color 0.35s;
     z-index: 999;
   }
 
