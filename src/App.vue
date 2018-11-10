@@ -13,15 +13,18 @@
 </template>
 
 <script>
+import { throttle } from 'lodash';
+
 export default {
   mounted() {
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', throttle(() => {
+      console.log('scroll fired')
       if (window.scrollY > 0) {
-        nav.classList.add('filled')
+        nav.classList.add('filled');
       } else if (this.$router.currentRoute.name === 'home') {
-        nav.classList.remove('filled')
+        nav.classList.remove('filled');
       }
-    })
+    }, 100))
   }
 }
 </script>
