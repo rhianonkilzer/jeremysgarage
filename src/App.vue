@@ -65,13 +65,16 @@ export default {
     width: 100%;
     color: white;
 
-    transition: background-color 0.35s;
+    transition: background-color 0.35s, border-bottom 0.35s, box-shadow 0.35s;
     z-index: 999;
   }
 
   #nav.filled {
-    background-color: white;
     color: black;
+    background-color: white;
+
+    /* border-bottom: solid 1px hsl(0, 0%, 80%); */
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
   }
 
   #nav > .title {
@@ -94,15 +97,17 @@ export default {
     border-radius: 2px;
 
     transition: background-color 0.2s, color 0.2s;
+    user-select: none;
   }
 
   #nav > a:hover,
-  #nav > a:active {
-    background-color: hsla(200, 100%, 70%, 0.5);
-  }
-
+  #nav > a:active,
   #nav > a.router-link-exact-active {
     color: hsl(200, 100%, 10%);
     background-color: hsl(200, 100%, 90%);
+  }
+
+  #nav > a.router-link-exact-active {
+    cursor: default;
   }
 </style>
