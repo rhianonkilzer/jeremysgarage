@@ -86,7 +86,7 @@ export default {
     position: relative;
 
     margin: 0.5rem;
-    padding: 0 0.4rem;
+    padding: 0 0.6rem;
     color: inherit;
 
     text-decoration: none;
@@ -98,10 +98,11 @@ export default {
 
   #nav > a:hover,
   #nav > a:active {
-    background-color: hsla(201, 100%, 70%, 0.5);
+    background-color: hsla(200, 100%, 70%, 0.5);
   }
 
   #nav > a.router-link-exact-active {
-    background-color: hsla(201, 100%, 70%, 0.75);
+    color: hsl(200, 100%, 10%);
+    background-color: hsl(200, 100%, 90%);
   }
 </style>
