@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <nav id="nav">
-      <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link>
+    <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}">
+      <!-- <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link> -->
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/services">Services</router-link>
@@ -20,6 +20,20 @@
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        nav.classList.add('filled')
+      } else if (this.$router.currentRoute.name === 'home') {
+        nav.classList.remove('filled')
+      }
+    })
+  }
+}
+</script>
 
 <style>
   #app {
@@ -43,19 +57,23 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+
 
     width: 100%;
+    color: white;
 
-    background-color: rgba(0, 0, 0, 0.884);
-
+    transition: background-color 0.2s;
     z-index: 999;
+  }
+
+  #nav.filled {
+    background-color: white;
+    color: black;
   }
 
   #nav > .title {
     margin: auto auto auto 1rem;
-
-    color: #f2f2f2;
 
     font-weight: bold;
     letter-spacing: 1px;
@@ -65,40 +83,25 @@
   #nav > a {
     position: relative;
 
-    padding: 0.5rem 0.85rem;
-
-    color: #f2f2f2;
+    margin: 0.5rem;
+    padding: 0 0.4rem;
+    color: inherit;
 
     font-size: 1rem;
     font-family: Roboto;
     text-decoration: none;
 
-    transition: background-color 0.2s;
+    border-radius: 2px;
+
+    transition: background-color 0.2s, color 0.2s;
   }
 
-  #nav > a::after {
-    content: '';
-
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-
-    width: 0;
-    height: 2px;
-
-    /* TODO: Change "lightblue" to the theme-color */
-    background-color: lightblue;
-
-    transform: translateX(-50%);
-    transition: width 0.2s;
+  #nav > a:hover,
+  #nav > a:active {
+    background-color: hsla(201, 100%, 70%, 0.5);
   }
 
-  #nav > a:active,
-  #nav > a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  #nav > a.router-link-exact-active::after {
-    width: 100%;
+  #nav > a.router-link-exact-active {
+    background-color: hsla(201, 100%, 70%, 0.75);
   }
 </style>
