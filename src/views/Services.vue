@@ -46,7 +46,8 @@
   }
 
   .services > .title {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   .services-list {
@@ -68,7 +69,7 @@
 
     display: flex;
     align-items: center;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 
     /* Space for the checkmark */
     padding-left: 1.65rem;
