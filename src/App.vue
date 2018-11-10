@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <main id="app">
     <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}">
       <!-- <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link> -->
       <router-link to="/">Home</router-link>
@@ -8,17 +8,8 @@
       <router-link to="/videos">Videos</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav>
-
-    <!-- <div id="nav"> |
-      <router-link to="/">Home</router-link> |
-      <router-link to="/services">Services</router-link> |
-      <router-link to="/videos">Videos</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link> |
-    </div> -->
-
     <router-view />
-  </div>
+  </main>
 </template>
 
 <script>
