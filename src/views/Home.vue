@@ -4,7 +4,7 @@
       <div class='hero-content'>
         <!-- <img class="title" src="../assets/Jeremy's Garage1.png" /> -->
         <h1 class='title'>Jeremy's Garage</h1>
-        <h2 class='subtitle'>Lorem ipsum dolor sit amet consectet adipisicing elit, sed do eiusmod.</h2>
+        <h2 class='subtitle'>Lorem ipsum dolor sit amet consectet adipisicing elit, sed do eiusmod at al do.</h2>
         <button class='action filled'>Lorem ipsum</button>
         <button class='action outline'>Dolor sit amet</button>
       </div>
@@ -64,10 +64,10 @@
     width: 100%;
     height: calc(100vh - 6rem);
     max-height: 35rem;
-    padding-top: 6rem;
+    padding-top: 8rem;
 
     /* background-image: url("../assets/banner.png"); */
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), transparent), url("../assets/garage.jpg");
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.65), transparent), url("../assets/garage.jpg");
     background-position: left;
     background-size: cover;
   }
@@ -81,7 +81,7 @@
   }
 
   .hero-content > .title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     color: transparent;
     -webkit-text-stroke: 1px white;
@@ -94,6 +94,7 @@
 
   .hero-content > .subtitle {
     max-width: 45rem;
+    margin-bottom: 1.5rem;
 
     color: white;
 
@@ -108,25 +109,31 @@
     border-radius: 18px;
     cursor: pointer;
 
-    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    border: solid 1px hsl(200, 100%, 90%);
+
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+
+  .action:hover,
+  .action:active,
+  .action:focus {
+    color: black !important;
+    background-color: hsl(200, 100%, 85%) !important;
+    border-color: hsl(200, 100%, 85%);
+  }
+
+  .action:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px hsla(200, 100%, 85%, 0.5);
   }
 
   .action.filled {
     background-color: hsl(200, 100%, 90%);
-    border: none;
   }
 
   .action.outline {
     color: white;
     background: none;
-    border: solid 1px hsl(200, 100%, 90%);
-  }
-
-  .action:hover,
-  .action:active {
-    color: black;
-    background-color: hsl(200, 100%, 85%) !important;
-    border-color: hsl(200, 100%, 85%);
   }
 
   /* Fake-content */
