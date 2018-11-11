@@ -5,7 +5,7 @@
         <!-- <img class="title" src="../assets/Jeremy's Garage1.png" /> -->
         <h1 class='title'>Jeremy's Garage</h1>
         <h2 class='subtitle'>Lorem ipsum dolor sit amet consectet adipisicing elit, sed do eiusmod at al do.</h2>
-        <button class='action filled'>Lorem ipsum</button>
+        <button class='action filled cta'>Lorem ipsum</button>
         <button class='action outline'>Dolor sit amet</button>
       </div>
     </header>
@@ -106,10 +106,8 @@
     padding: 0.4rem 1.25rem;
     margin-right: 1rem;
 
-    border-radius: 18px;
+    border-radius: 19px;
     cursor: pointer;
-
-    border: solid 1px hsl(200, 100%, 90%);
 
     transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
   }
@@ -117,7 +115,7 @@
   .action:hover,
   .action:active,
   .action:focus {
-    color: black !important;
+    color: hsl(200, 100%, 10%) !important;
     background-color: hsl(200, 100%, 85%) !important;
     border-color: hsl(200, 100%, 85%);
   }
@@ -128,12 +126,20 @@
   }
 
   .action.filled {
-    background-color: hsl(200, 100%, 90%);
+    padding: calc(0.4rem + 1px) calc(1.25rem + 1px);
+    color: hsl(200, 100%, 15%);
+    background: hsl(200, 100%, 90%);
+    border: none;
+  }
+
+  .action.filled.cta {
+    background: linear-gradient(to bottom right, hsl(200, 100%, 85%), hsl(345, 100%, 90%));
   }
 
   .action.outline {
     color: white;
     background: none;
+    border: solid 1px hsl(200, 100%, 85%);
   }
 
   /* Fake-content */
