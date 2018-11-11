@@ -40,6 +40,20 @@ export default {
 </script>
 
 <style>
+  body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff;
+    border-left: 1px solid #e6ecf8;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #293347;
+    outline: 1px solid #7f7f7f;
+  }
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
   #app {
     font-family: Roboto, var(--font-family-sans-serif);
     -webkit-font-smoothing: antialiased;
