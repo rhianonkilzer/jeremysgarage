@@ -31,7 +31,9 @@ export default {
       }
     },
     scrollToTop() {
-      window.scrollTo(0, 0);
+      this.$nextTick(() => {
+        window.scrollTo(0, 0);
+      })
     }
   }
 }
@@ -68,6 +70,10 @@ export default {
     transition: background-color 0.35s, border-bottom 0.35s, box-shadow 0.35s;
     pointer-events: none;
     z-index: 999;
+  }
+
+  #nav > * {
+    pointer-events: all;
   }
 
   #nav.filled {
