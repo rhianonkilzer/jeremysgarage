@@ -1,6 +1,6 @@
 <template>
   <main id="app">
-    <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}">
+    <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}" @click="scrollToTop()">
       <!-- <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link> -->
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
@@ -17,14 +17,23 @@ import { throttle } from 'lodash';
 
 export default {
   mounted() {
-    window.addEventListener('scroll', throttle(() => {
+    window.addEventListener('scroll', throttle(this.updateNavBackground, 100))
+    this.$nextTick(() => {
+      this.updateNavBackground()
+    })
+  }
+  methods: {
+    updateNavBackground() {
       console.log('scroll fired')
       if (window.scrollY > 0) {
         nav.classList.add('filled');
       } else if (this.$router.currentRoute.name === 'home') {
         nav.classList.remove('filled');
       }
-    }, 100))
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0)
+    }
   }
 }
 </script>
@@ -58,6 +67,7 @@ export default {
     color: white;
 
     transition: background-color 0.35s, border-bottom 0.35s, box-shadow 0.35s;
+    pointer-events: none;
     z-index: 999;
   }
 
