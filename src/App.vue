@@ -24,7 +24,6 @@ export default {
   }
   methods: {
     updateNavBackground() {
-      console.log('scroll fired')
       if (window.scrollY > 0) {
         nav.classList.add('filled');
       } else if (this.$router.currentRoute.name === 'home') {
@@ -32,7 +31,7 @@ export default {
       }
     },
     scrollToTop() {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     }
   }
 }
