@@ -21,7 +21,7 @@ export default {
     this.$nextTick(() => {
       this.updateNavBackground()
     })
-  }
+  },
   methods: {
     updateNavBackground() {
       if (window.scrollY > 0) {
