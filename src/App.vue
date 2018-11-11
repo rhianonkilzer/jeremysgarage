@@ -31,7 +31,7 @@ export default {
 
 <style>
   #app {
-    font-family: var(--font-family-sans-serif);
+    font-family: Roboto, var(--font-family-sans-serif);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #000000;
