@@ -1,7 +1,13 @@
 <template>
   <div class="home">
     <header class="hero">
-      <img class="title" src="../assets/Jeremy's Garage1.png" />
+      <div class='hero-content'>
+        <!-- <img class="title" src="../assets/Jeremy's Garage1.png" /> -->
+        <h1 class='title'>Jeremy's Garage</h1>
+        <h2 class='subtitle'>Lorem ipsum dolor sit amet consectet adipisicing elit, sed do eiusmod.</h2>
+        <button class='action filled'>Lorem ipsum</button>
+        <button class='action outline'>Dolor sit amet</button>
+      </div>
     </header>
 
     <!-- Fake Content below -->
@@ -56,32 +62,74 @@
     position: relative;
 
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 6rem);
     max-height: 35rem;
+    padding-top: 6rem;
 
     /* background-image: url("../assets/banner.png"); */
-    /* background-image: url("../assets/garage.jpg"); */
-    background-image: url("https://ak7.picdn.net/shutterstock/videos/13494197/thumb/1.jpg");
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), transparent), url("../assets/garage.jpg");
     background-position: left;
     background-size: cover;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
   }
 
-  .hero > .title {
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-
-    max-width: calc(100% - 2rem);
-    max-height: calc(100% - 4rem);
-
-    transform: translateX(-50%);
-    filter: grayscale(1);
-    filter: brightness(400%);
+  .hero-content {
+    display: block;
+    width: fit-content;
+    max-width: 35rem;
+    margin-left: 4rem;
+    margin-right: auto;
   }
 
+  .hero-content > .title {
+    margin-bottom: 2rem;
+
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); */
+  }
+
+  .hero-content > .subtitle {
+    max-width: 45rem;
+
+    color: white;
+
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+
+  .action {
+    padding: 0.4rem 1.25rem;
+    margin-right: 1rem;
+
+    border-radius: 18px;
+    cursor: pointer;
+
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .action.filled {
+    background-color: hsl(200, 100%, 90%);
+    border: none;
+  }
+
+  .action.outline {
+    color: white;
+    background: none;
+    border: solid 1px hsl(200, 100%, 90%);
+  }
+
+  .action:hover,
+  .action:active {
+    color: black;
+    background-color: hsl(200, 100%, 85%) !important;
+    border-color: hsl(200, 100%, 85%);
+  }
+
+  /* Fake-content */
   section {
     display: flex;
     flex-wrap: wrap;
@@ -118,11 +166,7 @@
     border-radius: 50%;
   }
 
-  article > h2 {
-  }
-
   article > p {
-    /* text-align: justify; */
     color: #444;
   }
 </style>
