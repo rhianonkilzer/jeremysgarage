@@ -7,6 +7,12 @@
       <router-link to="/contact">Contact</router-link>
     </nav>
     <router-view />
+    <footer class="page-footer">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fas fa-phone-square"></i>
+      <i class="fas fa-envelope-square"></i>
+
+    </footer>
   </main>
 </template>
 
