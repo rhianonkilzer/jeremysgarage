@@ -14,23 +14,24 @@
     <section>
       <h1>Lorem Ipsum Dolor</h1>
       <article>
-        <div></div>
-        <h2>Lorem</h2>
+        <div><img src="../assets/car-gear.svg" alt=""></div>
+        <h2>Cars we service</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+          At Jeremy's Garage we pride ourselves on servicing a variety of vehicles, including newer to older models of
+          the following:
+          Chevrolet, Chrysler, Dodge, Ford, Honda, Land
+          Rover, Lexus, Mazda, Nissan, Subaru, and Toyota.
         </p>
       </article>
       <article>
         <div></div>
-        <h2>Ipsum</h2>
+        <h2>Tools & Equipment</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+          Returning your vehicle in tip-top shape, and keeping it there, is our number one priority. Vehicles
+          with complex electrical systems need qualified technicians who understand how to service them. Engines that
+          are built for increased power and performance also need Jeremy's Garage to perform quality maintenance. Avoid
+          costly repairs when you come to our full-service
+          auto repair facility.
         </p>
       </article>
       <article>
@@ -80,7 +81,7 @@
     margin-right: auto;
   }
 
-  .hero-content > .title {
+  .hero-content>.title {
     margin-bottom: 3rem;
 
     color: transparent;
@@ -92,7 +93,7 @@
     /* text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); */
   }
 
-  .hero-content > .subtitle {
+  .hero-content>.subtitle {
     max-width: 45rem;
     margin-bottom: 1.5rem;
 
@@ -151,7 +152,7 @@
     padding: 3rem;
   }
 
-  section > h1 {
+  section>h1 {
     width: 100%;
     margin-bottom: 2rem;
 
@@ -169,7 +170,7 @@
     margin: 0 1rem 1rem;
   }
 
-  article > div {
+  article>div {
     width: 5rem;
     height: 5rem;
     margin-bottom: 1.5rem;
@@ -179,7 +180,12 @@
     border-radius: 50%;
   }
 
-  article > p {
+  article>h2 {
+    text-align: center;
+  }
+
+  article>p {
+    text-align: justify;
     color: #444;
   }
 </style>
