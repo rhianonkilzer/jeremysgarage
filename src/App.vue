@@ -1,7 +1,6 @@
 <template>
   <main id="app">
     <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}" @click="scrollToTop()">
-      <!-- <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link> -->
       <router-link to="/">Home</router-link>
       <router-link to="/services">Services</router-link>
       <router-link to="/videos">Videos</router-link>
