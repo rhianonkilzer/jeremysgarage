@@ -2,11 +2,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from './views/Home.vue'
-import Contact from './views/Contact.vue'
-import Services from './views/Services.vue'
-import Videos from './views/Videos.vue'
-import About from './views/About.vue'
+
+
+
+
+
 
 Vue.use(Router)
 
@@ -15,27 +15,27 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import('./views/Home.vue')
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: () => import('./views/Contact.vue')
     },
     {
       path: '/services',
       name: 'services',
-      component: Services
+      component: () => import('./views/Services.vue')
     },
     {
       path: '/videos',
       name: 'videos',
-      component: Videos
+      component: () => import('./views/Videos.vue')
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: () => import('./views/About.vue')
     }
   ]
 })
