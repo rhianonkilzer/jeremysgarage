@@ -70,7 +70,7 @@
     padding: 0;
   }
 
-  #app>*:last-child {
+  #app>*:nth-child(2) {
     padding-top: 3rem;
   }
 
@@ -136,6 +136,18 @@
 
   #nav>a.router-link-exact-active {
     cursor: default;
+  }
+
+  #app {
+    min-height: calc(100vh - 8rem);
+  }
+
+  .page-footer {
+    position: absolute;
+    bottom: 0;
+
+    height: 8rem;
+    margin-top: auto;
   }
 
   .page-footer>a.icon {

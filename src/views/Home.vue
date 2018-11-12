@@ -14,17 +14,7 @@
     <section>
       <h1>Lorem Ipsum Dolor</h1>
       <article>
-        <div><img src="../assets/car-gear.svg" alt=""></div>
-        <h2>Cars we service</h2>
-        <p>
-          At Jeremy's Garage we pride ourselves on servicing a variety of vehicles, including newer to older models of
-          the following:
-          Chevrolet, Chrysler, Dodge, Ford, Honda, Land
-          Rover, Lexus, Mazda, Nissan, Subaru, and Toyota.
-        </p>
-      </article>
-      <article>
-        <div></div>
+        <i class="fas fa-toolbox icon"></i>
         <h2>Tools & Equipment</h2>
         <p>
           Returning your vehicle in tip-top shape, and keeping it there, is our number one priority. Vehicles
@@ -35,13 +25,23 @@
         </p>
       </article>
       <article>
-        <div></div>
-        <h2>Dolor</h2>
+        <img class="icon" src="../assets/car-gear.svg" alt="car with gear icon" />
+        <h2>Cars we service</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+          At Jeremy's Garage we pride ourselves on servicing a variety of vehicles, including newer to older models of
+          the following:
+          Chevrolet, Chrysler, Dodge, Ford, Honda, Land
+          Rover, Lexus, Mazda, Nissan, Subaru, and Toyota.
+        </p>
+      </article>
+      <article>
+        <i class="fas fa-wrench icon"></i>
+        <h2>Maintenance Services</h2>
+        <p>
+          Quality auto service is the key to your vehicle’s longevity and peak performance. We understand that life on
+          the road can be rough on your vehicle’s engine and components. Even if your vehicle has a simple commute and
+          a consistent driving routine, it will still require special attention. From bumper-to-bumper we've got you
+          covered.
         </p>
       </article>
     </section>
@@ -170,14 +170,11 @@
     margin: 0 1rem 1rem;
   }
 
-  article>div {
+  article>.icon {
     width: 5rem;
     height: 5rem;
     margin-bottom: 1.5rem;
-
-    background-color: hsl(0, 0%, 75%);
-
-    border-radius: 50%;
+    font-size: 4.5rem;
   }
 
   article>h2 {
