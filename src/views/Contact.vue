@@ -1,24 +1,26 @@
 <template>
   <!-- this page will be for contact information, map/location, and a contact form -->
-  <div class="contact col-12">
-    <h3>Hours of Operation</h3>
-    <ul style="list-style-type:none">
-      <li>Monday through Friday: 8 AM - 5 PM</li>
-      <li>Saturday: by appointment only</li>
-      <li>Sundays: Closed</li>
-    </ul>
+  <div class="contact">
+    <section class="location">
+      <article>
+        <h3>Hours of Operation</h3>
+        <ul style="list-style-type:none">
+          <li>Monday through Friday: 8 AM - 5 PM</li>
+          <li>Saturday: by appointment only</li>
+          <li>Sundays: Closed</li>
+        </ul>
+      </article>
 
-    <div class="mapouter">
-      <div class="gmap_canvas">
-        <iframe width="850" height="600" id="gmap_canvas"
-          frameborder="0" scrolling="no"
-          marginwidth="0" marginheight="0"
-          src="https://maps.google.com/maps?q=Jeremys%20garage&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        >
-        </iframe>
+
+
+      <iframe width="750" height="500" id="gmap_canvas" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"
+        src="https://maps.google.com/maps?q=Jeremys%20garage&t=&z=13&ie=UTF8&iwloc=&output=embed">
         <a href="https://www.pureblack.de"></a>
-      </div>
-    </div>
+      </iframe>
+
+    </section>
+
+
 
   </div>
 </template>
@@ -30,12 +32,8 @@
 </script>
 
 <style scoped>
-  .mapouter {
-    text-align: right;
-  }
-
-  .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
+  .location {
+    width: 100%;
+    display: flex;
   }
 </style>
