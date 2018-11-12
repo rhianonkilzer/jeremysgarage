@@ -3,7 +3,6 @@
     <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}" @click="scrollToTop()">
       <!-- <router-link tag='p' to='/' class='title'>Jeremy's Garage</router-link> -->
       <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
       <router-link to="/services">Services</router-link>
       <router-link to="/videos">Videos</router-link>
       <router-link to="/contact">Contact</router-link>
@@ -13,30 +12,30 @@
 </template>
 
 <script>
-import { throttle } from 'lodash';
+  import { throttle } from 'lodash';
 
-export default {
-  mounted() {
-    window.addEventListener('scroll', throttle(this.updateNavBackground, 100))
-    this.$nextTick(() => {
-      this.updateNavBackground()
-    })
-  },
-  methods: {
-    updateNavBackground() {
-      if (window.scrollY > 0) {
-        nav.classList.add('filled');
-      } else if (this.$router.currentRoute.name === 'home') {
-        nav.classList.remove('filled');
-      }
-    },
-    scrollToTop() {
+  export default {
+    mounted() {
+      window.addEventListener('scroll', throttle(this.updateNavBackground, 100))
       this.$nextTick(() => {
-        window.scrollTo(0, 0);
+        this.updateNavBackground()
       })
+    },
+    methods: {
+      updateNavBackground() {
+        if (window.scrollY > 0) {
+          nav.classList.add('filled');
+        } else if (this.$router.currentRoute.name === 'home') {
+          nav.classList.remove('filled');
+        }
+      },
+      scrollToTop() {
+        this.$nextTick(() => {
+          window.scrollTo(0, 0);
+        })
+      }
     }
   }
-}
 </script>
 
 <style>
@@ -45,10 +44,12 @@ export default {
     background-color: #fff;
     border-left: 1px solid #e6ecf8;
   }
+
   body::-webkit-scrollbar-thumb {
     background-color: #293347;
     outline: 1px solid #7f7f7f;
   }
+
   body::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -64,7 +65,7 @@ export default {
     padding: 0;
   }
 
-  #app > *:last-child {
+  #app>*:last-child {
     padding-top: 3rem;
   }
 
@@ -86,7 +87,7 @@ export default {
     z-index: 999;
   }
 
-  #nav > * {
+  #nav>* {
     pointer-events: all;
   }
 
@@ -95,10 +96,10 @@ export default {
     background-color: white;
 
     /* border-bottom: solid 1px hsl(0, 0%, 80%); */
-    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
   }
 
-  #nav > .title {
+  #nav>.title {
     margin: auto auto auto 1rem;
 
     font-weight: bold;
@@ -106,7 +107,7 @@ export default {
     word-spacing: 2px;
   }
 
-  #nav > a {
+  #nav>a {
     position: relative;
 
     margin: 0.5rem;
@@ -121,14 +122,14 @@ export default {
     user-select: none;
   }
 
-  #nav > a:hover,
-  #nav > a:active,
-  #nav > a.router-link-exact-active {
+  #nav>a:hover,
+  #nav>a:active,
+  #nav>a.router-link-exact-active {
     color: hsl(200, 100%, 10%);
     background-color: hsl(200, 100%, 90%);
   }
 
-  #nav > a.router-link-exact-active {
+  #nav>a.router-link-exact-active {
     cursor: default;
   }
 </style>
