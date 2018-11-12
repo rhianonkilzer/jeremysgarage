@@ -4,7 +4,7 @@
       <div class='hero-content'>
         <!-- <img class="title" src="../assets/Jeremy's Garage1.png" /> -->
         <h1 class='title'>Jeremy's Garage</h1>
-        <h2 class='subtitle'>Lorem ipsum dolor sit amet consectet adipisicing elit, sed do eiusmod at al do.</h2>
+        <h2 class='subtitle'>A full-service auto repair facility in Nampa, serving the Treasure Valley area.</h2>
         <button class='action filled cta'>Lorem ipsum</button>
         <button class='action outline'>Dolor sit amet</button>
       </div>
