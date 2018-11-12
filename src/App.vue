@@ -8,9 +8,9 @@
     </nav>
     <router-view />
     <footer class="page-footer">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fas fa-phone-square"></i>
-      <i class="fas fa-envelope-square"></i>
+      <a class="icon" href=""><i class="fab fa-facebook-square"></i></a>
+      <a class="icon" href=""><i class="fas fa-phone-square"></i></a>
+      <a class="icon" href=""><i class="fas fa-envelope-square"></i></a>
 
     </footer>
   </main>
@@ -136,5 +136,10 @@
 
   #nav>a.router-link-exact-active {
     cursor: default;
+  }
+
+  .page-footer>a.icon {
+    font-size: 3rem;
+    margin: 1rem;
   }
 </style>
