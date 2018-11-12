@@ -11,7 +11,7 @@
         <iframe width="620" height="465" src="https://www.youtube.com/embed/04XP2VCru8E">
         </iframe>
 
-        <iframe width="620" height="465" src="https://www.youtube.com/embed/inFX5Sd-FpA"> THIS ISMAIN VIDEO THIS DISPLAYS FIRST BROWNIEEEEEEEEEEEEEEEEE -->
+        <iframe width="620" height="465" src="https://www.youtube.com/embed/inFX5Sd-FpA"> THIS IS MAIN VIDEO THIS DISPLAYS FIRST BROWNIEEEEEEEEEEEEEEEEE -->
             <!-- </iframe>
 
         <iframe width="620" height="465" src="https://www.youtube.com/embed/3F8EySrPxNg">
