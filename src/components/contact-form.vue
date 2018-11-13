@@ -2,7 +2,24 @@
     <div v-if="isOpen" class="contact-form">
         <form accept-charset="UTF-8" action="https://usebasin.com/f/8345c28386f6" method="POST">
             <h1 class="title mb-5">Schedule an Appointment</h1>
-
+            <fieldset>
+                <legend>Contact Info</legend>
+                <form-input type="text" label="Name" placeholder="Jane Doe" name="name"></form-input>
+                <form-input type="tel" label="Phone" placeholder="(208)123-4567" name="phone" pattern="^\d{3}-\d{3}-\d{4}$|^\d{10}$|^\(\d{3}\) \d{3}-\d{4}$|^\(\d{3}\) \d{3} \d{4}$|^\d{3} \d{3} \d{4}$"></form-input>
+                <form-input type="email" label="Email" placeholder="example@email.com" name="email"></form-input>
+            </fieldset>
+            <fieldset>
+                <legend>Vehicle Info</legend>
+                <form-input type="text" label="Make" placeholder="Chevrolet" name="make"></form-input>
+                <form-input type="text" label="Model" placeholder="Silverado" name="model"></form-input>
+                <form-input type="number" label="Year" placeholder="2003" name="year"></form-input>
+            </fieldset>
+            <form-select name="reason" label="Reason" placeholder="Select a reason" :options='options'></form-select>
+            <form-textarea name="message" label="Message" placeholder="Lorem ipsum dolor sit amet."></form-textarea>
+            <div class="actions">
+                <form-button filled>Submit</form-button>
+                <form-button>Reset</form-button>
+            </div>
         </form>
         <i @click="$props.closeForm()" class="fas fa-times fa-3x icon" role="button"></i>
     </div>
@@ -17,7 +34,16 @@
     export default {
         name: 'contact-form',
         data() {
-            return {}
+            return {
+                options: [
+                    "Routine Maintenance",
+                    "Engine",
+                    "A.C. / Heater",
+                    "Quotes",
+                    "Brakes",
+                    "Other"
+                ]
+            }
         },
         computed: {},
         methods: {},
@@ -25,8 +51,6 @@
             FormInput,
             FormSelect,
             FormButton
-
-
         },
         props: {
             isOpen: {
