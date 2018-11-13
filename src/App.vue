@@ -7,12 +7,13 @@
       <router-link to="/contact">Contact</router-link>
     </nav>
     <router-view />
-    <footer class="page-footer">
-      <a class="icon" href=""><i class="fab fa-facebook-square"></i></a>
-      <a class="icon" href=""><i class="fas fa-phone-square"></i></a>
-      <a class="icon" href=""><i class="fas fa-envelope-square"></i></a>
-
-    </footer>
+    <div style="position: relative; margin-top: auto;">
+      <footer class="page-footer">
+        <a class="icon" href=""><i class="fab fa-facebook-square"></i></a>
+        <a class="icon" href=""><i class="fas fa-phone-square"></i></a>
+        <a class="icon" href=""><i class="fas fa-envelope-square"></i></a>
+      </footer>
+    </div>
   </main>
 </template>
 
@@ -140,11 +141,12 @@
 
   #app {
     min-height: calc(100vh - 8rem);
+    padding-bottom: 8rem;
   }
 
   .page-footer {
     position: absolute;
-    bottom: 0;
+    top: 0;
 
     height: 8rem;
     margin-top: auto;

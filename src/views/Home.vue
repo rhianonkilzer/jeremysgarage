@@ -2,7 +2,6 @@
   <div class="home">
     <header class="hero">
       <div class='hero-content'>
-        <!-- <img class="title" src="../assets/Jeremy's Garage1.png" /> -->
         <h1 class='title'>Jeremy's Garage</h1>
         <h2 class='subtitle'>A full-service auto repair facility in Nampa, serving the Treasure Valley area.</h2>
         <button class='action filled cta'>Lorem ipsum</button>
@@ -12,7 +11,7 @@
 
     <!-- Fake Content below -->
     <section>
-      <h1>Lorem Ipsum Dolor</h1>
+      <h1>About Jeremy's Garage</h1>
       <article>
         <i class="fas fa-toolbox icon"></i>
         <h2>Tools & Equipment</h2>
@@ -30,8 +29,7 @@
         <p>
           At Jeremy's Garage we pride ourselves on servicing a variety of vehicles, including newer to older models of
           the following:
-          Chevrolet, Chrysler, Dodge, Ford, Honda, Land
-          Rover, Lexus, Mazda, Nissan, Subaru, and Toyota.
+          Chevrolet, Chrysler, Dodge, Ford, Honda, Lexus, Mazda, Nissan, Subaru, and Toyota.
         </p>
       </article>
       <article>
