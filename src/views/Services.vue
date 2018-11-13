@@ -1,18 +1,18 @@
 <template>
   <div class="services">
-    <h1 class="title">Services offered</h1>
+    <h1 class="title">Services We Offer</h1>
     <ul class="services-list">
-      <li>Brakes - Brake Repair</li>
+      <li>Brakes & Brake Repair</li>
       <li>Drive Train</li>
       <li>Engine Overhaul</li>
       <li>Scheduled Maintenance</li>
       <li>Tune Ups</li>
-      <li>No Start - No Run issues</li>
+      <li>No Start & No Run issues</li>
       <li>Bearings</li>
       <li>Clutches</li>
       <li>Emissions Repair</li>
       <li>Major Engine Repair</li>
-      <li>Timing Belts and Chains</li>
+      <li>Timing Belts & Chains</li>
       <li>Transmissions</li>
       <li>Pre Purchase Inspections</li>
       <li>Alternators</li>
@@ -21,6 +21,8 @@
       <li>Starters</li>
       <li>Water Pumps</li>
       <li>Oil Changes</li>
+      <li>Fuel System</li>
+      <li>Suspension & Steering</li>
     </ul>
   </div>
 </template>
@@ -45,7 +47,7 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  .services > .title {
+  .services>.title {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
@@ -64,7 +66,7 @@
     list-style: none;
   }
 
-  .services-list > li {
+  .services-list>li {
     position: relative;
 
     display: flex;
@@ -78,8 +80,8 @@
   }
 
   /* Checkmark styling below ↓ */
-  .services-list > li::before,
-  .services-list > li::after {
+  .services-list>li::before,
+  .services-list>li::after {
     content: '';
 
     position: absolute;
@@ -88,7 +90,7 @@
   }
 
   /* The circle */
-  .services-list > li::before {
+  .services-list>li::before {
     width: 1.25rem;
     height: 1.25rem;
 
@@ -99,7 +101,7 @@
   }
 
   /* The checkmark */
-  .services-list > li::after {
+  .services-list>li::after {
     width: 0.65rem;
     height: 0.35rem;
 

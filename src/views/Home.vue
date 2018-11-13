@@ -4,8 +4,8 @@
       <div class='hero-content'>
         <h1 class='title'>Jeremy's Garage</h1>
         <h2 class='subtitle'>A full-service auto repair facility in Nampa, serving the Treasure Valley area.</h2>
-        <button class='action filled cta' @click="toggleOpen">Schedule an appointment</button>
-        <button class='action outline'>Dolor sit amet</button>
+        <button class='schedule-button' @click="toggleOpen">Schedule an appointment</button>
+        <!-- <button class='action outline'>Dolor sit amet</button> -->
       </div>
     </header>
 
@@ -27,9 +27,9 @@
         <img class="icon" src="../assets/car-gear.svg" alt="car with gear icon" />
         <h2>Cars we service</h2>
         <p>
-          At Jeremy's Garage we pride ourselves on servicing a variety of vehicles, including newer to older models of
-          the following:
-          Chevrolet, Chrysler, Dodge, Ford, Honda, Lexus, Mazda, Nissan, Subaru, and Toyota.
+          We are a family owned business delivering honest and professional automotive repair and auto maintenance
+          services. Jeremy's Garage services a variety of vehicles, including newer to older
+          Chevrolet, Chrysler, Dodge, Ford, Honda, Lexus, Mazda, Nissan, Subaru, and Toyota models.
         </p>
       </article>
       <article>
@@ -38,7 +38,7 @@
         <p>
           Quality auto service is the key to your vehicle’s longevity and peak performance. We understand that life on
           the road can be rough on your vehicle’s engine and components. Even if your vehicle has a simple commute and
-          a consistent driving routine, it will still require special attention. From bumper-to-bumper we've got you
+          a consistent driving routine, it will require special attention. From bumper-to-bumper we've got you
           covered.
         </p>
       </article>
@@ -84,6 +84,7 @@
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.65), transparent), url("../assets/garage.jpg");
     background-position: left;
     background-size: cover;
+    box-shadow: 0px 6px 15px 3px #414141c9;
   }
 
   .hero-content {
@@ -146,9 +147,73 @@
     border: none;
   }
 
-  .action.filled.cta {
-    background: linear-gradient(to bottom right, hsl(200, 100%, 85%), hsl(345, 100%, 90%));
+  .schedule-button:hover {
+    cursor: pointer;
+    transition: 0.2s;
+
+    background-color: rgba(156, 192, 233, 0.87);
   }
+
+  .schedule-button {
+    -moz-box-shadow: inset 0px 1px 20px -2px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 20px -2px #ffffff;
+    box-shadow: inset 0px 1px 20px -2px #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d1e5eb), color-stop(1, #69a9e0));
+    background: -moz-linear-gradient(top, #d1e5eb 5%, #69a9e0 100%);
+    background: -webkit-linear-gradient(top, #d1e5eb 5%, #69a9e0 100%);
+    background: -o-linear-gradient(top, #d1e5eb 5%, #69a9e0 100%);
+    background: -ms-linear-gradient(top, #d1e5eb 5%, #69a9e0 100%);
+    background: linear-gradient(to bottom, #d1e5eb 5%, #69a9e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1e5eb', endColorstr='#69a9e0', GradientType=0);
+    background-color: #d1e5eb;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #d6d6d6;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: -1px 2px 5px #424242;
+  }
+
+  .schedule-button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #69a9e0), color-stop(1, #d1e5eb));
+    background: -moz-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
+    background: -webkit-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
+    background: -o-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
+    background: -ms-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
+    background: linear-gradient(to bottom, #69a9e0 5%, #d1e5eb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69a9e0', endColorstr='#d1e5eb', GradientType=0);
+    background-color: #69a9e0;
+  }
+
+  .schedule-button:active {
+    position: relative;
+    top: 1px;
+  }
+
+
+  /* .schedule-button {
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgba(47, 138, 241, 0.87);
+    color: white;
+
+    border-radius: 13px;
+    border: none;
+    padding: calc(0.4rem + 1px) calc(1.25rem + 1px);
+
+  } */
+
+  /* .action.filled.cta {
+    color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(110, 210, 235, 0.644);
+    text-shadow: 2px 2px 4px #000000;
+    background: linear-gradient(to bottom right, hsl(200, 100%, 85%), hsl(345, 100%, 90%));
+  } */
 
   .action.outline {
     color: white;
