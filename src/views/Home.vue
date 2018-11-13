@@ -4,7 +4,7 @@
       <div class='hero-content'>
         <h1 class='title'>Jeremy's Garage</h1>
         <h2 class='subtitle'>A full-service auto repair facility in Nampa, serving the Treasure Valley area.</h2>
-        <button class='action filled cta'>Lorem ipsum</button>
+        <button class='action filled cta' @click="toggleOpen">Schedule an appointment</button>
         <button class='action outline'>Dolor sit amet</button>
       </div>
     </header>
@@ -43,12 +43,27 @@
         </p>
       </article>
     </section>
+    <contact-form :isOpen="isOpen"></contact-form>
   </div>
 </template>
 
 <script>
+  import ContactForm from "../components/contact-form.vue"
   export default {
-    name: 'home'
+    data() {
+      return {
+        isOpen: false
+      }
+    },
+    methods: {
+      toggleOpen() {
+        this.isOpen = !this.isOpen
+      }
+    },
+    name: 'home',
+    components: {
+      ContactForm
+    }
   }
 </script>
 
