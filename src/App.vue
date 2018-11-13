@@ -9,9 +9,10 @@
     <router-view />
     <div style="position: relative; margin-top: auto;">
       <footer class="page-footer">
-        <a class="icon" href=""><i class="fab fa-facebook-square"></i></a>
+        <a class="icon" target="_blank" href="https://www.facebook.com/Jeremysgaragellc/"><i class="fab fa-facebook-square"></i></a>
         <a class="icon" href=""><i class="fas fa-phone-square"></i></a>
-        <a class="icon" href=""><i class="fas fa-envelope-square"></i></a>
+        <a class="icon" href="mailto:jeremysgaragellc@gmail.com?Subject=Hello"><i class="fas fa-envelope-square"></i></a>
+        <img class="icon" src="./assets/bbb-logo.svg" alt="bbb-logo" />
       </footer>
     </div>
   </main>
@@ -19,7 +20,6 @@
 
 <script>
   import { throttle } from 'lodash';
-
   export default {
     mounted() {
       window.addEventListener('scroll', throttle(this.updateNavBackground, 100))
@@ -155,5 +155,10 @@
   .page-footer>a.icon {
     font-size: 3rem;
     margin: 1rem;
+    color: #000000;
+  }
+
+  .page-footer>a.icon:hover {
+    color: rgb(50, 138, 211);
   }
 </style>

@@ -12,7 +12,6 @@
           <li>Sundays: Closed</li>
         </ul>
       </article>
-
       <iframe class="map" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="https://maps.google.com/maps?q=Jeremys%20garage&t=&z=13&ie=UTF8&iwloc=&output=embed">
         <a href="https://www.pureblack.de"></a>
       </iframe>
