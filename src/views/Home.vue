@@ -43,7 +43,7 @@
         </p>
       </article>
     </section>
-    <contact-form :isOpen="isOpen"></contact-form>
+    <contact-form :isOpen="isOpen" :closeForm='toggleOpen'></contact-form>
   </div>
 </template>
 
