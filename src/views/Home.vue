@@ -188,7 +188,6 @@
     height: 5rem;
     margin-bottom: 1.5rem;
     font-size: 4.5rem;
-    color: rgb(45, 98, 184);
   }
 
   article>h2 {
