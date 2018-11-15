@@ -147,12 +147,12 @@
     border: none;
   }
 
-  .schedule-button:hover {
+  /* .schedule-button:hover {
     cursor: pointer;
     transition: 0.2s;
     color: black;
     background-color: rgba(156, 192, 233, 0.87);
-  }
+  } */
 
   .schedule-button {
     -moz-box-shadow: inset 0px 1px 20px -2px #ffffff;
@@ -181,14 +181,15 @@
   }
 
   .schedule-button:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #69a9e0), color-stop(1, #d1e5eb));
+    opacity: 1;
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #69a9e0), color-stop(1, #d1e5eb));
     background: -moz-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
     background: -webkit-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
     background: -o-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
     background: -ms-linear-gradient(top, #69a9e0 5%, #d1e5eb 100%);
     background: linear-gradient(to bottom, #69a9e0 5%, #d1e5eb 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69a9e0', endColorstr='#d1e5eb', GradientType=0);
-    background-color: #69a9e0;
+    background-color: #69a9e0; */
   }
 
   .schedule-button:active {
