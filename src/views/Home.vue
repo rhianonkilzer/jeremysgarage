@@ -150,7 +150,7 @@
   .schedule-button:hover {
     cursor: pointer;
     transition: 0.2s;
-
+    color: black;
     background-color: rgba(156, 192, 233, 0.87);
   }
 
