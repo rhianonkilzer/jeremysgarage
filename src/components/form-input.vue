@@ -61,8 +61,7 @@
     line-height: 100%;
 
     transform: translateY(-50%);
-
-    transition: top 0.2s, transform 0.2s;
+    transition: top 0.2s, font-size 0.2s;
   }
 
   .form-input > input {
@@ -76,11 +75,21 @@
     background-color: #aadaf2;
   }
 
+  .form-input:focus-within > label {
+    top: -5%;
+    font-size: 0.75rem;
+  }
+
   .form-input > input:focus {
     outline: none;
   }
 
+  .form-input > input:focus::placeholder {
+    opacity: 0.5;
+  }
+
   .form-input > input::placeholder {
+    color: #002233;
     opacity: 0;
     transition: opacity 0.2s;
   }
