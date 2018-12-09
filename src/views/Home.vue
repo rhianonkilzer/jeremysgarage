@@ -254,7 +254,7 @@
     height: 5rem;
     margin-bottom: 1.5rem;
     font-size: 4.5rem;
-    color: rgb(41, 49, 158);
+    color: #4783f3;
 
   }
 
