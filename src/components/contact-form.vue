@@ -16,6 +16,7 @@
           label="Name"
           placeholder="Jane Doe"
           name="name"
+          required
         ></form-input>
         <form-input
           type="tel"
@@ -23,12 +24,14 @@
           placeholder="(208)123-4567"
           name="phone"
           pattern="^\d{3}-\d{3}-\d{4}$|^\d{10}$|^\(\d{3}\) \d{3}-\d{4}$|^\(\d{3}\) \d{3} \d{4}$|^\d{3} \d{3} \d{4}$"
+          required
         ></form-input>
         <form-input
           type="email"
           label="Email"
           placeholder="example@email.com"
           name="email"
+          required
         ></form-input>
       </fieldset>
       <fieldset>

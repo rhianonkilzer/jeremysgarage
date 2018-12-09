@@ -1,9 +1,8 @@
 <template>
   <div
     class="form-input"
-    :class="{ textarea: isTextarea }"
+    :class="{ isTextarea, isFilled }"
   >
-    <label :for="id">{{label}}</label>
     <input
       v-if="!isTextarea"
       class="input"
@@ -11,6 +10,8 @@
       :placeholder="placeholder"
       :name="name"
       :type="type"
+      :required="required"
+      @input="updateValue"
     />
     <textarea
       v-else
@@ -18,8 +19,11 @@
       :id="id"
       :placeholder="placeholder"
       :name="name"
+      :required="required"
+      @input="updateValue"
     />
-    </div>
+    <label :for="id">{{label}}</label>
+  </div>
 </template>
 
 <script>
@@ -31,19 +35,28 @@
       label: String,
       placeholder: String,
       name: String,
-      type: String
+      type: String,
+      required: Boolean
     },
     data() {
       return {
-        id: idCounter++
+        id: idCounter++,
+        value: ''
       };
     },
     computed: {
       isTextarea() {
         return this.$props.type === 'textarea';
+      },
+      isFilled() {
+        return this.value !== '';
       }
     },
-    methods: {},
+    methods: {
+      updateValue(event) {
+        this.value = event.target.value;
+      }
+    },
     components: {}
   }
 </script>
@@ -54,18 +67,12 @@
     position: relative;
 
     display: inline-block;
-
-    padding: 0.2rem;
     margin: 1rem;
-
-    background-color: #cceeff;
-    border-radius: 2px;
-
-    transition: background-color 0.2s;
   }
 
   .form-input > label {
     position: absolute;
+    top: 50%;
     left: 4.76%;
     right: 0%;
     bottom: 0%;
@@ -80,27 +87,37 @@
     transition: top 0.2s, font-size 0.2s;
   }
 
-  .form-input.textarea > label {
+  .form-input.isTextarea > label {
     top: 1rem;
   }
 
   .form-input > .input {
-    padding-left: 4.76%;
-    background: none;
+    width: 15rem;
+    padding: 0.2rem;
+    padding-left: calc(4.76% + 0.2rem);
+
+    background-color: #cceeff;
+
     border: none;
+    border-radius: 2px;
+
+    transition: background-color 0.2s;
   }
 
   .form-input > textarea.input {
     resize: none;
-    width: 100%;
   }
 
-  /* TODO: replace :focus-within with javascript and [focus-within] */
-  .form-input:focus-within {
-    background-color: #aadaf2;
+  .form-input > .input:focus {
+    background-color: hsl(200, 73%, 81%);
   }
 
-  .form-input:focus-within > label {
+  .form-input.isFilled > .input:invalid {
+    background-color: hsl(0, 71%, 81%);
+  }
+
+  .form-input > .input:focus + label,
+  .form-input.isFilled > label {
     top: -10px;
     font-size: 0.75rem;
   }
