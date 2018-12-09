@@ -159,6 +159,6 @@
   }
 
   .page-footer>a.icon:hover {
-    color: rgb(50, 138, 211);
+    color: #97adb6;
   }
 </style>
