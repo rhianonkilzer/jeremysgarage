@@ -150,24 +150,38 @@
   .schedule-button:hover {
     cursor: pointer;
     transition: 0.2s;
-    color: black;
-    background-color: rgba(156, 192, 233, 0.87);
   }
 
+  .schedule-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.2s;
+    border-radius: 18px;
+  }
 
-  .schedule-button:active {
-    position: relative;
-    top: 1px;
+  .schedule-button:hover::after {
+    opacity: 0.25;
+  }
+
+  .schedule-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(146, 238, 241, 0.602);
   }
 
 
   .schedule-button {
+    position: relative;
     border-radius: 18px;
     border: none;
     padding: calc(0.4rem + 1px) calc(1.25rem + 1px);
 
     color: hsl(201, 98%, 22%);
-    /* background: linear-gradient(to bottom right, hsl(200, 41%, 35%), hsl(182, 53%, 86%)); */
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   }
 
