@@ -65,9 +65,6 @@
 <style scoped>
   .form-input {
     position: relative;
-
-    display: inline-block;
-    margin: 1rem;
   }
 
   .form-input > label {
@@ -78,7 +75,6 @@
     bottom: 0%;
 
     display: table;
-    margin: 0;
 
     color: #002233;
     line-height: 100%;
@@ -92,9 +88,10 @@
   }
 
   .form-input > .input {
-    width: 15rem;
-    padding: 0.2rem;
-    padding-left: calc(4.76% + 0.2rem);
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+    padding-left: calc(4.76% + 0.3rem);
 
     background-color: #cceeff;
 
