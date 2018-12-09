@@ -9,11 +9,11 @@
       </div>
     </header>
 
-    <!-- Fake Content below -->
-    <section>
+
+    <section class="about">
       <h1>About Jeremy's Garage</h1>
       <article>
-        <i class="fas fa-toolbox icon"></i>
+        <i class="about-icon fas fa-toolbox"></i>
         <h2>Tools & Equipment</h2>
         <p>
           Returning your vehicle in tip-top shape, and keeping it there, is our number one priority. Vehicles
@@ -24,7 +24,7 @@
         </p>
       </article>
       <article>
-        <img class="icon" src="../assets/car-gear.svg" alt="car with gear icon" />
+        <img class="about-icon" src="../assets/car-gear.svg" alt="car with gear icon" />
         <h2>Cars we service</h2>
         <p>
           We are a family owned business delivering honest and professional automotive repair and auto maintenance
@@ -33,7 +33,7 @@
         </p>
       </article>
       <article>
-        <i class="fas fa-wrench icon"></i>
+        <i class="about-icon fas fa-wrench"></i>
         <h2>Maintenance Services</h2>
         <p>
           Quality auto service is the key to your vehicle’s longevity and peak performance. We understand that life on
@@ -249,18 +249,20 @@
     margin: 0 1rem 1rem;
   }
 
-  article>.icon {
+  .about-icon {
     width: 5rem;
     height: 5rem;
     margin-bottom: 1.5rem;
     font-size: 4.5rem;
+    color: rgb(43, 115, 156);
+
   }
 
-  article>h2 {
+  .about h2 {
     text-align: center;
   }
 
-  article>p {
+  .about p {
     text-align: justify;
     color: #444;
   }
