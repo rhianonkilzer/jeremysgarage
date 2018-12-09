@@ -1,5 +1,5 @@
 <template>
-    <button class="form-button">
+    <button v-bind='$attrs' v-on='$listeners' class="form-button">
         <slot></slot>
     </button>
 </template>
@@ -8,14 +8,6 @@
 <script>
     export default {
         name: 'form-button',
-        props: {},
-        data() {
-            return {}
-        },
-        computed: {},
-        methods: {},
-        components: {}
-
     }
 </script>
 
