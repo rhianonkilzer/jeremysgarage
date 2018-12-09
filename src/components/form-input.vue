@@ -1,13 +1,25 @@
 <template>
-  <div class="form-input">
+  <div
+    class="form-input"
+    :class="{ textarea: isTextarea }"
+  >
     <label :for="id">{{label}}</label>
     <input
+      v-if="!isTextarea"
+      class="input"
       :id="id"
       :placeholder="placeholder"
       :name="name"
       :type="type"
     />
-  </div>
+    <textarea
+      v-else
+      class="input"
+      :id="id"
+      :placeholder="placeholder"
+      :name="name"
+    />
+    </div>
 </template>
 
 <script>
@@ -26,7 +38,11 @@
         id: idCounter++
       };
     },
-    computed: {},
+    computed: {
+      isTextarea() {
+        return this.$props.type === 'textarea';
+      }
+    },
     methods: {},
     components: {}
   }
@@ -52,9 +68,9 @@
     position: absolute;
     left: 4.76%;
     right: 0%;
-    top: 50%;
     bottom: 0%;
 
+    display: table;
     margin: 0;
 
     color: #002233;
@@ -64,10 +80,19 @@
     transition: top 0.2s, font-size 0.2s;
   }
 
-  .form-input > input {
+  .form-input.textarea > label {
+    top: 1rem;
+  }
+
+  .form-input > .input {
     padding-left: 4.76%;
     background: none;
     border: none;
+  }
+
+  .form-input > textarea.input {
+    resize: none;
+    width: 100%;
   }
 
   /* TODO: replace :focus-within with javascript and [focus-within] */
@@ -76,19 +101,19 @@
   }
 
   .form-input:focus-within > label {
-    top: -5%;
+    top: -10px;
     font-size: 0.75rem;
   }
 
-  .form-input > input:focus {
+  .form-input > .input:focus {
     outline: none;
   }
 
-  .form-input > input:focus::placeholder {
+  .form-input > .input:focus::placeholder {
     opacity: 0.5;
   }
 
-  .form-input > input::placeholder {
+  .form-input > .input::placeholder {
     color: #002233;
     opacity: 0;
     transition: opacity 0.2s;
