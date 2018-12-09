@@ -13,7 +13,7 @@
     <section class="about">
       <h1>About Jeremy's Garage</h1>
       <article>
-        <i class="about-icon fas fa-toolbox"></i>
+        <img class="about-icon" src="../assets/toolbox-solid.svg" alt="Tools" />
         <h2>Tools & Equipment</h2>
         <p>
           Returning your vehicle in tip-top shape, and keeping it there, is our number one priority. Vehicles
@@ -33,7 +33,7 @@
         </p>
       </article>
       <article>
-        <i class="about-icon fas fa-wrench"></i>
+        <img class="about-icon" src="../assets/wrench-solid.svg" alt="Wrench" />
         <h2>Maintenance Services</h2>
         <p>
           Quality auto service is the key to your vehicle’s longevity and peak performance. We understand that life on
@@ -228,7 +228,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    padding: 3rem;
+    padding: 6rem;
   }
 
   section>h1 {
@@ -255,7 +255,7 @@
     margin-bottom: 1.5rem;
     font-size: 4.5rem;
     color: #4783f3;
-
+    filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.2));
   }
 
   .about h2 {
