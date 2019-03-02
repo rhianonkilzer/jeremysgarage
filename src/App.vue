@@ -42,6 +42,7 @@
       }
     }
   }
+  // comment
 </script>
 
 <style>
