@@ -2,44 +2,35 @@
   <div class="home">
     <header class="hero">
       <div class='hero-content'>
-        <h1 class='title'>Jeremy's Garage</h1>
-        <h2 class='subtitle'>A full-service auto repair facility in Nampa, serving the Treasure Valley area.</h2>
-        <button class='schedule-button' @click="toggleOpen">Schedule an appointment</button>
+        <h1 class='title'>Other Corner Publishing</h1>
+        <h2 class='subtitle'>Serving the Treasure Valley area.</h2>
+        <button class='schedule-button' @click="toggleOpen"><strong>Request A Quote</strong></button>
         <!-- <button class='action outline'>Dolor sit amet</button> -->
       </div>
     </header>
 
 
     <section class="about">
-      <h1>About Jeremy's Garage</h1>
+      <h1>About Other Corner</h1>
       <article>
         <img class="about-icon" src="../assets/toolbox-solid.svg" alt="Tools" />
-        <h2>Tools & Equipment</h2>
+        <h2>Title</h2>
         <p>
-          Returning your vehicle in tip-top shape, and keeping it there, is our number one priority. Vehicles
-          with complex electrical systems need qualified technicians who understand how to service them. Engines that
-          are built for increased power and performance also need Jeremy's Garage to perform quality maintenance. Avoid
-          costly repairs when you come to our full-service
-          auto repair facility.
+          Text
         </p>
       </article>
       <article>
-        <img class="about-icon" src="../assets/car-gear.svg" alt="car with gear icon" />
-        <h2>Cars we service</h2>
+        <img class="about-icon" src="" alt="car with gear icon" />
+        <h2>Title 2</h2>
         <p>
-          We are a family owned business delivering honest and professional automotive repair and auto maintenance
-          services. Jeremy's Garage services a variety of vehicles, including newer to older
-          Chevrolet, Chrysler, Dodge, Ford, Honda, Lexus, Mazda, Nissan, Subaru, and Toyota models.
+          Text 2
         </p>
       </article>
       <article>
         <img class="about-icon" src="../assets/wrench-solid.svg" alt="Wrench" />
-        <h2>Maintenance Services</h2>
+        <h2>Title 3</h2>
         <p>
-          Quality auto service is the key to your vehicle’s longevity and peak performance. We understand that life on
-          the road can be rough on your vehicle’s engine and components. Even if your vehicle has a simple commute and
-          a consistent driving routine, it will require special attention. From bumper-to-bumper we've got you
-          covered.
+          Text 3
         </p>
       </article>
     </section>
@@ -81,7 +72,7 @@
     padding-top: 8rem;
 
     /* background-image: url("../assets/banner.png"); */
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.65), transparent), url("../assets/garage.jpg");
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.692), transparent), url("../assets/woodtexture2.jpeg");
     background-position: left;
     background-size: cover;
     box-shadow: 0px 6px 15px 3px #414141c9;
@@ -159,7 +150,7 @@
     width: 100%;
     height: 100%;
     content: '';
-    background-color: black;
+    background-color: rgb(20, 80, 70);
     opacity: 0;
     transition: opacity 0.2s;
     border-radius: 18px;
@@ -171,24 +162,24 @@
 
   .schedule-button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(146, 238, 241, 0.602);
+    box-shadow: 0 0 0 3px rgba(1, 197, 148, 0.602);
   }
 
 
   .schedule-button {
     position: relative;
-    border-radius: 18px;
+    border-radius: 8px;
     border: none;
     padding: calc(0.4rem + 1px) calc(1.25rem + 1px);
 
-    color: hsl(201, 98%, 22%);
+    color: hsl(170, 86%, 28%);
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   }
 
   .action.outline {
     color: white;
     background: none;
-    border: solid 1px hsl(200, 100%, 85%);
+    border: solid 1px hsl(202, 14%, 36%);
   }
 
   /* Fake-content */
