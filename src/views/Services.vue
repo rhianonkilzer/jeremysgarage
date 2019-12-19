@@ -2,27 +2,15 @@
   <div class="services">
     <h1 class="title">Services We Offer</h1>
     <ul class="services-list">
-      <li>Brakes & Brake Repair</li>
-      <li>Drive Train</li>
-      <li>Engine Overhaul</li>
-      <li>Scheduled Maintenance</li>
-      <li>Tune Ups</li>
-      <li>No Start & No Run issues</li>
-      <li>Bearings</li>
-      <li>Clutches</li>
-      <li>Emissions Repair</li>
-      <li>Major Engine Repair</li>
-      <li>Timing Belts & Chains</li>
-      <li>Transmissions</li>
-      <li>Pre Purchase Inspections</li>
-      <li>Alternators</li>
-      <li>Cooling Repair</li>
-      <li>Electrical</li>
-      <li>Starters</li>
-      <li>Water Pumps</li>
-      <li>Oil Changes</li>
-      <li>Fuel System</li>
-      <li>Suspension & Steering</li>
+      <li>Contact Pages</li>
+      <li>Functionality for users</li>
+      <li>Landing Pages</li>
+      <li>About Pages</li>
+      <li>Store Platforms</li>
+      <li>Easy User Interaction</li>
+      <li>Mobile Friendly Designs</li>
+      <li>Consults For Further Features</li>
+      <li>Consults For Advice</li>
     </ul>
   </div>
 </template>
@@ -44,19 +32,21 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', var(--font-family-sans-serif);
   }
 
   .services>.title {
     margin-top: 2rem;
     margin-bottom: 3rem;
+
+    color: rgba(0, 0, 0, 0.747);
   }
 
   .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 225px);
     grid-column-gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
 
     width: 55rem;
     max-width: 100%;
@@ -94,7 +84,7 @@
     width: 1.25rem;
     height: 1.25rem;
 
-    background-color: rgba(50, 150, 255);
+    background-color: rgb(1, 122, 112);
     border-radius: 50%;
 
     transform: translateY(-50%);

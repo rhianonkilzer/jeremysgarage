@@ -14,23 +14,33 @@
       <h1>About Other Corner</h1>
       <article>
         <img class="about-icon" src="../assets/toolbox-solid.svg" alt="Tools" />
-        <h2>Title</h2>
+        <h2>Programs We Use</h2>
         <p>
-          Text
+          We design our website templates using Javascript, HTML, & CSS languages to create professional platforms for
+          our clients. Click Request A Quote above to reach out to us today for more information about how we can help
+          you design the perfect site for your needs.
         </p>
       </article>
       <article>
-        <img class="about-icon" src="" alt="car with gear icon" />
-        <h2>Title 2</h2>
+        <img class="about-icon" src="../assets/building-solid.svg" alt="About" />
+        <h2>Our Company</h2>
         <p>
-          Text 2
+          The <strong>Other Corner Publishing</strong> team is a group of Freelance Web Designers and Front End
+          Developers from Idaho, currently serving the Treasure valley area and beyond.
         </p>
       </article>
       <article>
         <img class="about-icon" src="../assets/wrench-solid.svg" alt="Wrench" />
-        <h2>Title 3</h2>
+        <h2>Website Services</h2>
         <p>
-          Text 3
+          Offering designs with both the desktop user, and Mobile user in mind to make your website more user
+          friendly for all customers.
+          Designing Front-End functionality for your customers to easily contact or inquire your services using your
+          platform.
+          <br>We offer <strong>free</strong> consults to help you with what best suits your
+          business
+          needs.
+
         </p>
       </article>
     </section>
@@ -195,6 +205,7 @@
     width: 100%;
     margin-bottom: 2rem;
 
+    color: rgba(0, 0, 0, 0.753);
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
@@ -220,6 +231,8 @@
 
   .about h2 {
     text-align: center;
+    color: rgba(0, 0, 0, 0.849);
+
   }
 
   .about p {

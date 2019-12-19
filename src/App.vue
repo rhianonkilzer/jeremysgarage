@@ -65,7 +65,7 @@
   }
 
   #app {
-    font-family: Roboto, var(--font-family-sans-serif);
+    font-family: 'Quicksand', var(--font-family-sans-serif);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #000000;
@@ -85,7 +85,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
 
 
     width: 100vw;
@@ -134,8 +134,8 @@
   #nav>a:hover,
   #nav>a:active,
   #nav>a.router-link-exact-active {
-    color: hsl(200, 100%, 10%);
-    background-color: hsl(200, 100%, 90%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(180, 97%, 26%);
   }
 
   #nav>a.router-link-exact-active {
