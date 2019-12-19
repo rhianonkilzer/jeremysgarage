@@ -22,9 +22,9 @@ export default new Router({
       component: () => import('./views/Services.vue')
     },
     {
-      path: '/videos',
-      name: 'videos',
-      component: () => import('./views/Videos.vue')
+      path: '/portfolio',
+      name: 'portfolio',
+      component: () => import('./views/Portfolio.vue')
     },
   ]
 })

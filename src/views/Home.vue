@@ -17,7 +17,8 @@
         <h2>Programs We Use</h2>
         <p>
           We design our website templates using Javascript, HTML, & CSS languages to create professional platforms for
-          our clients. Click Request A Quote above to reach out to us today for more information about how we can help
+          our clients. Click <strong>Request A Quote</strong> above to reach out to us today for more information about
+          how we can help
           you design the perfect site for your needs.
         </p>
       </article>
@@ -99,8 +100,7 @@
   .hero-content>.title {
     margin-bottom: 3rem;
 
-    color: transparent;
-    -webkit-text-stroke: 1px white;
+    color: rgba(255, 255, 255, 0.699);
 
     font-size: 3.5rem;
     letter-spacing: 1px;
@@ -112,7 +112,7 @@
     max-width: 45rem;
     margin-bottom: 1.5rem;
 
-    color: white;
+    color: rgba(255, 255, 255, 0.699);
 
     font-size: 1.8rem;
     font-weight: normal;
@@ -160,7 +160,6 @@
     width: 100%;
     height: 100%;
     content: '';
-    background-color: rgb(20, 80, 70);
     opacity: 0;
     transition: opacity 0.2s;
     border-radius: 18px;
@@ -172,7 +171,7 @@
 
   .schedule-button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(1, 197, 148, 0.602);
+    box-shadow: 0 0 0 3px rgba(162, 185, 179, 0);
   }
 
 
@@ -182,8 +181,8 @@
     border: none;
     padding: calc(0.4rem + 1px) calc(1.25rem + 1px);
 
-    color: hsl(170, 86%, 28%);
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    color: rgba(0, 0, 0, 0.774);
+    background-image: linear-gradient(to top, #252525a9 0%, #ffffff 100%);
   }
 
   .action.outline {

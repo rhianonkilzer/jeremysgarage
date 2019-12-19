@@ -3,17 +3,16 @@
     <nav id="nav" :class="{filled: $router.currentRoute.name !== 'home'}" @click="scrollToTop()">
       <router-link to="/">Home</router-link>
       <router-link to="/services">Services</router-link>
-      <router-link to="/videos">Videos</router-link>
+      <router-link to="/portfolio">Portfolio</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav>
     <router-view />
     <div style="position: relative; margin-top: auto;">
       <footer class="page-footer">
-        <a class="icon" target="_blank" href="https://www.facebook.com/Jeremysgaragellc/"><i
-            class="fab fa-facebook-square"></i></a>
-        <a class="icon" href="tel:+12086979332"><i class="fas fa-phone-square"></i></a>
-        <a class="icon" href="mailto:jeremysgaragellc@gmail.com?Subject=Hello"><i
-            class="fas fa-envelope-square"></i></a>
+        <!-- <a class="icon" target="_blank" href="https://www.facebook.com/Jeremysgaragellc/"><i
+            class="fab fa-facebook-square"></i></a> -->
+        <a class="icon" href="tel:+12089495159"><i class="fas fa-phone-square"></i></a>
+        <a class="icon" href="mailto:rhianonkilzer@yahoo.com?Subject=Hello"><i class="fas fa-envelope-square"></i></a>
         <!-- <img class="icon" src="./assets/bbb-logo.svg" alt="bbb-logo" /> -->
       </footer>
     </div>
@@ -89,7 +88,7 @@
 
 
     width: 100vw;
-    color: white;
+    color: rgba(255, 255, 255, 0.726);
 
     transition: background-color 0.35s, border-bottom 0.35s, box-shadow 0.35s;
     pointer-events: none;
@@ -134,8 +133,8 @@
   #nav>a:hover,
   #nav>a:active,
   #nav>a.router-link-exact-active {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(180, 97%, 26%);
+    color: hsla(0, 0%, 100%, 0.76);
+    background-color: hsl(180, 93%, 16%);
   }
 
   #nav>a.router-link-exact-active {

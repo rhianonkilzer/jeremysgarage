@@ -1,8 +1,8 @@
 <template>
-    <div class="videos col-12 d-flex justify-content-center">
+    <div class="portfolio col-12 d-flex justify-content-center">
 
 
-
+        <h1>Portfolio things here</h1>
 
 
     </div>
@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        name: 'videos',
+        name: 'portfolio',
         data() {
             return {}
         },
