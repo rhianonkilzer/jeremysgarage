@@ -1,27 +1,9 @@
 <template>
-  <div
-    class="form-input"
-    :class="{ isTextarea, isFilled }"
-  >
-    <input
-      v-if="!isTextarea"
-      class="input"
-      :id="id"
-      :placeholder="placeholder"
-      :name="name"
-      :type="type"
-      :required="required"
-      @input="updateValue"
-    />
-    <textarea
-      v-else
-      class="input"
-      :id="id"
-      :placeholder="placeholder"
-      :name="name"
-      :required="required"
-      @input="updateValue"
-    />
+  <div class="form-input" :class="{ isTextarea, isFilled }">
+    <input v-if="!isTextarea" class="input" :id="id" :placeholder="placeholder" :name="name" :type="type"
+      :required="required" @input="updateValue" />
+    <textarea v-else class="input" :id="id" :placeholder="placeholder" :name="name" :required="required"
+      @input="updateValue" />
     <label :for="id">{{label}}</label>
   </div>
 </template>
@@ -76,7 +58,7 @@
 
     display: table;
 
-    color: #002233;
+    color: #dadadae7;
     line-height: 100%;
 
     transform: translateY(-50%);
@@ -93,7 +75,7 @@
     padding: 0.3rem;
     padding-left: calc(4.76% + 0.3rem);
 
-    background-color: #cceeff;
+    background-color: #00afa1ef;
 
     border: none;
     border-radius: 2px;
@@ -106,7 +88,8 @@
   }
 
   .form-input > .input:focus {
-    background-color: hsl(200, 73%, 81%);
+    background-color: hsl(0, 0%, 46%);
+    color: rgba(218, 218, 218, 0.938);
   }
 
   .form-input.isFilled > .input:invalid {
@@ -128,7 +111,7 @@
   }
 
   .form-input > .input::placeholder {
-    color: #002233;
+    color: #d1d1d1;
     opacity: 0;
     transition: opacity 0.2s;
   }

@@ -1,84 +1,31 @@
 <template>
-  <div
-    v-if="isOpen"
-    class="contact-form"
-  >
-    <h1 class="title mb-5">Schedule an Appointment</h1>
-    <form
-      accept-charset="UTF-8"
-      action="https://usebasin.com/f/8345c28386f6"
-      method="POST"
-    >
+  <div v-if="isOpen" class="contact-form">
+    <h1 class="title mb-5" style="color:white;">Request a Quote</h1>
+    <form accept-charset="UTF-8" action="https://usebasin.com/f/8345c28386f6" method="POST">
       <div class="row">
         <fieldset>
-          <legend>Contact Info</legend>
-          <form-input
-            type="text"
-            label="Name"
-            placeholder="Jane Doe"
-            name="name"
-            required
-          ></form-input>
-          <form-input
-            type="tel"
-            label="Phone"
-            placeholder="(208)123-4567"
-            name="phone"
+          <legend style="color:white;">Contact Info</legend>
+          <form-input type="text" label="Name" placeholder="Jane Doe" name="name" required></form-input>
+          <form-input type="tel" label="Phone" placeholder="(208)123-4567" name="phone"
             pattern="^\d{3}-\d{3}-\d{4}$|^\d{10}$|^\(\d{3}\) \d{3}-\d{4}$|^\(\d{3}\) \d{3} \d{4}$|^\d{3} \d{3} \d{4}$"
-            required
-          ></form-input>
-          <form-input
-            type="email"
-            label="Email"
-            placeholder="example@email.com"
-            name="email"
-            required
-          ></form-input>
+            required></form-input>
+          <form-input type="email" label="Email" placeholder="example@email.com" name="email" required></form-input>
         </fieldset>
-        <fieldset>
+        <!-- <fieldset>
           <legend>Vehicle Info</legend>
-          <form-input
-            type="text"
-            label="Make"
-            placeholder="Chevrolet"
-            name="make"
-          ></form-input>
-          <form-input
-            type="text"
-            label="Model"
-            placeholder="Silverado"
-            name="model"
-          ></form-input>
-          <form-input
-            type="number"
-            label="Year"
-            placeholder="2003"
-            name="year"
-          ></form-input>
-        </fieldset>
+          <form-input type="text" label="Make" placeholder="Chevrolet" name="make"></form-input>
+          <form-input type="text" label="Model" placeholder="Silverado" name="model"></form-input>
+          <form-input type="number" label="Year" placeholder="2003" name="year"></form-input>
+        </fieldset> -->
       </div>
-      <form-select
-        name="reason"
-        label="Reason"
-        placeholder="Select a reason"
-        :options='options'
-      ></form-select>
-      <form-input
-        type="textarea"
-        name="message"
-        label="Message"
-        placeholder="Leave a message here..."
-      ></form-input>
+      <form-select name="reason" label="Reason" placeholder="Select a reason" :options='options'></form-select>
+      <form-input type="textarea" name="message" label="Message" placeholder="Leave a message here..."></form-input>
       <div class="actions">
         <form-button filled>Submit</form-button>
         <form-button>Reset</form-button>
       </div>
     </form>
-    <i
-      @click="$props.closeForm()"
-      class="fas fa-times fa-3x icon"
-      role="button"
-    ></i>
+    <i @click="$props.closeForm()" class="fas fa-times fa-3x icon" style="color:white;" role="button"></i>
   </div>
 </template>
 
@@ -138,12 +85,12 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: white;
+    background-color: rgba(5, 5, 5, 0.911);
 
     z-index: 999;
   }
 
-  .contact-form > .title {
+  .contact-form>.title {
     width: 100%;
     margin-top: 2rem;
 
@@ -180,7 +127,7 @@
     margin-bottom: 1rem;
   }
 
-  form fieldset > .form-input {
+  form fieldset>.form-input {
     margin-bottom: 1.5rem;
   }
 

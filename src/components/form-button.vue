@@ -15,7 +15,7 @@
 <style scoped>
     .form-button {
         border-radius: 3px;
-        background-color: #A0A7A7;
+        background-color: rgba(50, 59, 59, 0.856);
         color: white;
         border: none;
         margin: .5rem;
