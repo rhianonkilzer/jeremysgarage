@@ -2,7 +2,7 @@
   <div class="home">
     <header class="hero">
       <div class='hero-content'>
-        <h1 class='title'>Other Corner Publishing</h1>
+        <h1 class='title'>Synergistic Web Solutions</h1>
         <h2 class='subtitle'>Serving the Treasure Valley area.</h2>
         <button class='schedule-button' @click="toggleOpen"><strong>Request A Quote</strong></button>
         <!-- <button class='action outline'>Dolor sit amet</button> -->
@@ -11,7 +11,7 @@
 
 
     <section class="about">
-      <h1>About Other Corner</h1>
+      <h1>About Synergistic Web Solutions</h1>
       <article>
         <img class="about-icon" src="../assets/toolbox-solid.svg" alt="Tools" />
         <h2>Programs We Use</h2>
@@ -26,7 +26,7 @@
         <img class="about-icon" src="../assets/building-solid.svg" alt="About" />
         <h2>Our Company</h2>
         <p>
-          The <strong>Other Corner Publishing</strong> team is a group of Freelance Web Designers and Front End
+          The <strong>Synergistic Web Solutions</strong> team is a group of Freelance Web Designers and Front End
           Developers from Idaho, currently serving the Treasure valley area and beyond.
         </p>
       </article>
@@ -34,13 +34,14 @@
         <img class="about-icon" src="../assets/wrench-solid.svg" alt="Wrench" />
         <h2>Website Services</h2>
         <p>
-          Offering designs with both the desktop user, and Mobile user in mind to make your website more user
-          friendly for all customers.
-          Designing Front-End functionality for your customers to easily contact or inquire your services using your
+          Offering designs with both the desktop user, as well as the Mobile user in mind to make your website more user
+          friendly for all customers on both platforms.
+          Designing Front-End functionality for our clients customers to easily contact or inquire your services using
+          your
           platform.
           <br>We offer <strong>free</strong> consults to help you with what best suits your
           business
-          needs.
+          needs, just fill out our quote questionare to start the process.
 
         </p>
       </article>
